@@ -84,7 +84,9 @@ app.get('/alexa-search/:query', function(req, res) {
           filter: 'audioonly',
           quality: '140'
         }).pipe(writer);
-
+        // Mark video as completed
+        cache[id]['downloaded'] = true;
+        
         // Mark video as downloaded once writer is finished
         /*writer.on('finish', function() {
             console.log("Finished download ... " + title);
