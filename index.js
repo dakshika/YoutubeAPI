@@ -86,12 +86,12 @@ app.get('/alexa-search/:query', function(req, res) {
         }).pipe(writer);
 
         // Mark video as downloaded once writer is finished
-        writer.on('finish', function() {
+        /*writer.on('finish', function() {
             console.log("Finished download ... " + title);
 
             // Mark video as completed
             cache[id]['downloaded'] = true;
-        });
+        });*/
       }
 
       // Return correctly and download the audio in the background
