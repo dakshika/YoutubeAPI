@@ -85,7 +85,7 @@ app.get('/alexa-search/:query', function(req, res) {
           quality: '140'
         }).pipe(writer);
         // Mark video as completed
-        cache[id]['downloaded'] = true;
+        //cache[id]['downloaded'] = true;
         
         // Mark video as downloaded once writer is finished
         /*writer.on('finish', function() {
