@@ -1,7 +1,7 @@
 {
-  "name": "dmhacker-youtube",
+  "name": "YoutubeAPI",
   "description": "YouTube proxy that can fetch and play videos",
-  "repository": "https://github.com/dmhacker/dmhacker-youtube",
+  "repository": "https://github.com/reger-men/YoutubeAPI",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Amazon_Alexa_App_Logo.png",
   "keywords": [
       "node",
