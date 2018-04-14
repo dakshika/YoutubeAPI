@@ -211,6 +211,8 @@ app.get('/search/:query', function(req, res) {
 
 //////////////////////////////////////////////////////////////////////////
 var serveIndex = require('serve-index');
+app.use(express.static(__dirname + "/"))
+app.use('/public', serveIndex(__dirname + '/public'));
 
 // Start the application!
 app.listen(app.get('port'), function() {
