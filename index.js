@@ -210,11 +210,6 @@ app.get('/search/:query', function(req, res) {
 });
 
 //////////////////////////////////////////////////////////////////////////
-var express = require('express')
-  , app = express.createServer();
-
-
-
 // Start the application!
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
