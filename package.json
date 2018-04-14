@@ -1,5 +1,5 @@
 {
-    "name": "dmhacker-youtube",
+    "name": "YoutubeAPI",
     "version": "1.1.0",
     "description": "YouTube proxy that can fetch and play videos",
     "engines": {
@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dmhacker/dmhacker-youtube"
+        "url": "https://github.com/reger/YoutubeAPI"
     },
     "keywords": [
         "node",
