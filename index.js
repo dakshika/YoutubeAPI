@@ -210,6 +210,15 @@ app.get('/search/:query', function(req, res) {
 });
 
 //////////////////////////////////////////////////////////////////////////
+var express = require('express')
+  , app = express.createServer();
+
+app.configure(function() {
+  var hourMs = 1000*60*60;
+  app.use(express.static(__dirname + '/public', { maxAge: hourMs }));
+  app.use(express.directory(__dirname + '/public'));
+  app.use(express.errorHandler());
+});
 
 // Start the application!
 app.listen(app.get('port'), function() {
