@@ -41,7 +41,7 @@ app.get('/alexa-search/:query', function(req, res) {
     maxResults: 1,
     type: 'video',
     relevanceLanguage: lang,
-    //videoCategoryId: '10',
+    videoCategoryId: '10',
     key: process.env.YOUTUBE_API_KEY
   }, function(err, results) {
     if (err) {
