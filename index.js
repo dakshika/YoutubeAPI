@@ -42,7 +42,7 @@ app.get('/alexa-search/:query', function(req, res) {
     type: 'video',
     relevanceLanguage: lang,
     videoCategoryId: '10',
-    key: "AIzaSyByJTPj_k26zekNODYvBAPUBlohLf3aAYE"
+    key: process.env.YOUTUBE_API_KEY
   }, function(err, results) {
     if (err) {
       console.error('An error occurred: ' + err.message);
@@ -188,7 +188,7 @@ app.get('/search/:query', function(req, res) {
   ytsearch(query, {
     maxResults: 1,
     type: 'video',
-    key: "AIzaSyByJTPj_k26zekNODYvBAPUBlohLf3aAYE"
+    key: process.env.YOUTUBE_API_KEY
   }, function(err, results) {
     if (err) {
       // An error occurred while searching for the video
