@@ -1,7 +1,7 @@
 {
   "name": "YoutubeAPI",
   "description": "YouTube proxy that can fetch and play videos",
-  "repository": "https://github.com/reger-men/YoutubeAPI",
+  "repository": "https://github.com/dakshika/YoutubeAPI",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Amazon_Alexa_App_Logo.png",
   "keywords": [
       "node",
@@ -17,7 +17,7 @@
   ],
   "env": {
     "YOUTUBE_API_KEY": {
-      "description": ""
+      "description": "AIzaSyByJTPj_k26zekNODYvBAPUBlohLf3aAYE"
     }
   }
 }
